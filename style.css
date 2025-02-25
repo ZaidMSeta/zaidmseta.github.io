@@ -1,0 +1,189 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8eee3;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+h4 {
+    text-align: left;
+}
+#header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #70A0AF;
+
+}
+#header #link {
+    color: white;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+}
+#nav {
+    background-color: #3a5760;
+    padding: 5px;
+    margin-bottom: 5%;
+}
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#nav ul li {
+    margin: 1%;
+}
+
+#nav ul li a {
+    color: #cecece;
+}
+
+
+#content {
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#resume-content {
+    
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.content-box {
+    background-color: #70A0AF;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.content-box ul li {
+    text-align: LEFT;
+}
+.title {
+    color: #141301;
+    text-align: center;
+}
+
+
+#footer {
+    background-color: #3a5760;
+    color: #cecece;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1%;
+    margin-top: auto;
+
+}
+
+#footer a {
+    color: #cecece;
+    text-decoration: none;
+    text-align: center;
+}
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+#links a{
+    color: #70A0AF;
+    background-color: #FFFFFF;
+    padding: 10px;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;    
+    }
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    #content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-box {
+        padding: 25px;   
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    #content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .content-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    #nav ul {
+        flex-direction: column;
+        text-align: left;
+    }
+    .profile-image {
+        display: none; 
+    }
+    #links {
+        flex-direction: column;
+
+    }
+}
